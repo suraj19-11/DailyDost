@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { LayoutDashboard, Timer, Users, UserCircle, Menu, TrendingUp, BookOpen } from "lucide-react";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { useState } from "react";
+import logoImage from './assests/Logo.png';
 
 const Navbar = () => {
   const location = useLocation();
@@ -91,7 +92,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link to="/dashboard" className="text-xl md:text-2xl font-bold text-primary hover:text-primary/80 transition-colors">
-            DailyDost
+            <img src={logoImage} alt="DailyDost Logo" className="h-16 w-auto" />
           </Link>
 
           {/* Desktop Navigation */}
