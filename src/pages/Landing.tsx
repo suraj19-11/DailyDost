@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { BookOpen, Target, Users, TrendingUp } from "lucide-react";
 import { Link } from "react-router-dom";
+import heroLogo from '../components/assests/HeroLogo.png';
 
 const Landing = () => {
   return (
@@ -9,9 +10,11 @@ const Landing = () => {
       <div className="relative overflow-hidden bg-gradient-hero">
         <div className="container mx-auto px-4 py-20 md:py-32">
           <div className="max-w-3xl mx-auto text-center animate-fade-in">
-            <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">
-              DailyDost
-            </h1>
+           <img 
+            src={heroLogo} 
+            alt="DailyDost Logo" 
+             className="mx-auto h-32 md:h-36g mb-6" // Adjust h-20/h-24 for desired size
+/>
             <p className="text-xl md:text-2xl text-white/90 mb-8">
               From Tracker to Ally – Build Habits That Stick
             </p>
